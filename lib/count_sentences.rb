@@ -20,6 +20,7 @@ class String
         if sentence.length <= 3
           sentence_array.delete_at(i)
         end
+      end
     sentence_array.length
   end
 end
