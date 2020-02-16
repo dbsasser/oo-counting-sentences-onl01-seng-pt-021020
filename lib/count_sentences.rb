@@ -16,7 +16,9 @@ class String
 
   def count_sentences
     sentence_array = self.split(/[.!?]/)
-      sentece_array.map! 
+      sentece_array.each_with_index.map! do |sentence, i|
+        if sentence.length <= 3
+          
     sentence_array.length
   end
 end
