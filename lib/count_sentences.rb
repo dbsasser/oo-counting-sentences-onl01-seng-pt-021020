@@ -18,7 +18,8 @@ class String
     sentence_array = self.split(/[.!?]/)
       sentece_array.each_with_index.map! do |sentence, i|
         if sentence.length <= 3
-          
+          sentence_array.delete_at(i)
+        end
     sentence_array.length
   end
 end
